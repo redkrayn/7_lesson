@@ -28,11 +28,7 @@ def choose(author_id, author_question):
     bot.send_message(author_id, message)
 
 
-def main():
-    bot.reply_on_message(wait)
-    bot.run_bot()
-
-
 if __name__ == '__main__':
     bot = ptbot.Bot(TELEGRAM_TOKEN)
-    main()
+    bot.reply_on_message(wait)
+    bot.run_bot()
